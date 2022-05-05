@@ -54,6 +54,8 @@ module.exports = {
 
     develop:{
       port: 8545,
+      gas: 0,
+      gasPrice: 0
     }
 
     // Another network with more advanced options...
@@ -87,7 +89,7 @@ module.exports = {
 
   // Set default mocha options here, use special reporters etc.
   mocha: {
-    // timeout: 100000
+    timeout: 100000
   },
 
   // Configure your compilers
