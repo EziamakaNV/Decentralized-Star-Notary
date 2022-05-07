@@ -69,7 +69,7 @@ it('lets user2 buy a star and decreases its balance in ether', async() => {
     const balanceOfUser2BeforeTransaction = await web3.eth.getBalance(user2);
     const gasEstimate = await instance.buyStar.estimateGas(starId, {from: user2, value: balance});
     console.log("gasEstimate: " + gasEstimate);
-    await instance.buyStar(starId, {from: user2, value: balance});
+    await instance.buyStar(starId, {from: user2, value: balance, gasPrice: 0});
     const balanceAfterUser2BuysStar = await web3.eth.getBalance(user2);
     let value = Number(balanceOfUser2BeforeTransaction) - Number(balanceAfterUser2BuysStar);
     assert.equal(value, starPrice);
