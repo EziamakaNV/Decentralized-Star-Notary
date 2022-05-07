@@ -1,6 +1,6 @@
 const StarNotary = artifacts.require("StarNotary");
 
-const starName = "minfoy sofuj -gos";
+const starName = "Best Star Notary";
 const symbol = "BSN";
 
 module.exports = function(deployer) {

@@ -1,3 +1,10 @@
+# Deployed Contract Details
+1. ERC-721 Token Name - Best Star Notary
+2. ERC-721 Token Symbol - BSN
+3. Version of the Truffle and OpenZeppelin used - Truffle = v5.5.12 & OpenZeppelin = 4.6.0
+4. Your Token Address on the Rinkeby Network - 0x8F87A61BFfb4C1EDf7a65d25899a98AaC70C6C25
+
+
 # ND1309 C2 Ethereum Smart Contracts, Tokens and Dapps - Project Starter 
 **PROJECT: Decentralized Star Notary Service Project** - For this project, you will create a DApp by adding functionality with your smart contract and deploy it on the public testnet.
 
@@ -40,8 +47,8 @@ truffle version
 ```bash
 cd app
 # install packages
-npm install --save  openzeppelin-solidity@2.3
-npm install --save  truffle-hdwallet-provider@1.0.17
+npm install --save  @openzeppelin/contracts
+npm install --save  @truffle/hdwallet-provider
 npm install webpack-dev-server -g
 npm install web3
 ```
@@ -123,16 +130,7 @@ Error: Truffle is currently using solc 0.5.16, but one or more of your contracts
 // Configure your compilers  
 compilers: {    
   solc: {      
-    version: "0.5.16", // <- Use this        
+    version: "^0.8.0", // <- Use this        
     // docker: true,
     // ...
 ```
-
-## Raise a PR or report an Issue
-1. Feel free to raise a [Pull Request](https://github.com/udacity/nd1309-p2-Decentralized-Star-Notary-Service-Starter-Code/pulls) if you find a bug/scope of improvement in the current repository. 
-
-2. If you have suggestions or facing issues, you can log in issue. 
-
----
-
-Do not use the [Old depreacted zipped starter code](https://s3.amazonaws.com/video.udacity-data.com/topher/2019/January/5c51c4c0_project-5-starter-code/project-5-starter-code.zip)
