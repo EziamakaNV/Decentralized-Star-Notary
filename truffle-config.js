@@ -53,9 +53,7 @@ module.exports = {
     },
 
     develop:{
-      port: 8545,
-      gas: 0,
-      gasPrice: 0
+      port: 8545
     },
 
     // Another network with more advanced options...
